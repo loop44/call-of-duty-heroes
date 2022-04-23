@@ -1,0 +1,56 @@
+@media (max-width: 1300px) {
+  .slice {
+    width: calc(60% - 3rem);
+  }
+}
+
+@media (max-width: 800px) {
+  .slice {
+    width: calc(70%);
+  }
+
+  .slice h2 {
+    font-size: 1.5rem;
+  }
+
+  .slice.left {
+    clip-path: polygon(0 0, 100% 0, 40% 100%, 0 100%);
+  }
+
+  .slice.right {
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  .slice.left .bg {
+    background-position: left 30%;
+  }
+  .slice.right .bg {
+    background-position: right 130%;
+  }
+
+  .slice .text {
+    font-size: 0.8rem;
+  }
+
+  .slice.left .text {
+    top: 0;
+    padding-right: 10rem;
+  }
+  .slice.right .text {
+    padding-left: 10rem;
+  }
+
+  header {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .slice.left .text {
+    top: 0;
+    padding-right: 5rem;
+  }
+  .slice.right .text {
+    padding-left: 5rem;
+  }
+}
